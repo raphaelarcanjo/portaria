@@ -2,21 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.arcanjo.portaria;
+package com.arcanjo.portaria.view;
 
+import com.arcanjo.portaria.view.templates.Janela;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author raphael
  */
-public class Janela extends JFrame implements ActionListener{
+public class JanelaPrincipal extends Janela implements ActionListener{
     
-    public Janela() {
+    public JanelaPrincipal() {
         JButton botaoOk = new JButton();
         botaoOk.setText("Clique aqui");
         botaoOk.setHorizontalAlignment(JButton.CENTER);
@@ -28,10 +28,6 @@ public class Janela extends JFrame implements ActionListener{
         this.add(botaoOk);
         
         setTitle("Cadastro de visitante");
-        setLayout(null);
-        setSize(600, 400);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
     }
 
     @Override

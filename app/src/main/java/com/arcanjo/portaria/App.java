@@ -3,8 +3,10 @@
  */
 package com.arcanjo.portaria;
 
+import com.arcanjo.portaria.view.JanelaPrincipal;
+
 public class App {
     public static void main(String[] args) {
-        new Janela();
+        new JanelaPrincipal();
     }
 }

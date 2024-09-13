@@ -14,7 +14,8 @@ public class Janela extends JFrame {
     public Janela () {
         setLayout(null);
         setSize(600, 400);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Cadastro de visitante");
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setVisible(true);
     }
 }
